@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campus Mart</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		#t1{
+			font-family: cursive;
+			background-color: #404354;
+			margin-top: 0px;
+			height: 90px;
+			width: 100%;
+			font-size: 50px;
+			text-align: center;
+			color:white;
+			margin-bottom: 0px;
+
+
+		}
+		#t1 a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding-top: 30px;
+			padding-bottom: 10px;
+			margin-right: 20px;
+			position: relative;
+			display: inline;
+			float: right;
+			
+		}
+		.active:hover {
+    		border-bottom: 2px solid white;
+		}
+		.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close ,.close1,.close2,.close3,.close4,.close5,.close6{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close,.close1,.close2,.close3,.close4,.close5,.close6:hover,
+.close,.close1,.close2,.close3,.close4,.close5,.close6:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+        
+	</style>
+</head>
+<body>
+	<img src="logo.png" style="height: 70px;padding-top: 10px;padding-left:8px;padding-right: 50px;display: inline;position: absolute; ">
+	<h1 id="t1">
+		Campus Mart
+
+	<a class="active" href="main.html" style="font-family:initial;" >ADMIN LOGIN</a>
+	</h1>
+	<div id="drinks" style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;">
+      	Drinks
+        <a href="drinks.php">
+      	<img src="colddrinks.jpg" style="width: 250px;position:relative;height: 180px;">
+      	 </a> 	
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;" id="eat">
+      	Eatables
+        <a href="eatables.php">
+      	<img src="kurkure.jpg" style="width: 250px;position:relative;height: 180px;padding-top: 15px;"></a>
+      	  	
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;" id="art">
+      Art and Crafts
+      <a href="art.php">
+        
+      	<img src="artncraft.png" style="width: 250px;position:relative;height: 180px;padding-top: 15px;"></a>
+      	  	
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;" id="station">
+      	Stationery
+        <a href="stationery.php">
+      	<img src="station.jpg" style="width: 250px;position:relative;height: 180px;padding-top: 15px;"></a>
+      	  	
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;" id="calci">
+      	Calculator
+        <a href="calci.php">
+      	<img src="calci.png" style="width: 250px;position:relative;height: 180px;padding-top: 15px;"></a>
+      	  	
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;" id="textb">
+      	Textbooks
+        <a href="text.php">
+      	<img src="text.jpg" style="width: 250px;position:relative;height: 180px;padding-top: 15px;">
+      	  	</a>
+    </div>
+    <div style="border: solid black 2px;border-radius: 4px;width: 22%;margin: 5%;float: left;font-size: 20px;padding-top:20px;padding-bottom: 100px;padding-left:0px;text-align:center;margin-left: 480px;" id="noteb">
+      	Notebooks
+        <a href="note.php">
+      	<img src="note.jpg" style="width: 250px;position:relative;height: 180px;padding-top: 15px;"></a>
+      	  	
+    </div>
+
+
+    
+    <footer class="page-footer font-small blue pt-4" style="background-color: #67768B;position: relative;margin-top:1400px;bottom: 0;">
+    <div class="container-fluid text-center text-md-left" style="color: black;">
+		<div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <h5 class="text-uppercase">About Us</h5>
+          <p>Campus Book Mart is a local bookstore serving the students, faculty and staff of PES University - Bangalore with pride. Our primary goal is to ensure students are able to obtain the course materials they need at reasonable prices. We also provide many other items to support your academic career and college spirit. Please browse our website or stop by our store anytime!</p>
+
+        </div>
+        
+        <div class="col-md-3 mb-md-0 mb-3">
+			<h5 class="text-uppercase">ADDRESS</h5>
+            	<p>PES University<br>
+            		100 Feet Ring Road,BSK III stage<br>
+            		Bangalore - 560085
+            	</p>
+          </div>
+          
+          <div class="col-md-3 mb-md-0 mb-3">
+            
+            <h5 class="text-uppercase">CONTACT</h5>
+            	<p>
+            		Ph-no :  +91 80 26721983<br>
+            		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+91 80 26772108
+            	</p>
+          </div>
+         
+      </div>
+    </div>
+    
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a style="text-decoration: none;color: black;"> CampusMart.com</a>
+    </div>
+  </footer>
+        
+    
+</body>
+</html>

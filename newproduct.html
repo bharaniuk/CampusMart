@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "style.css">
+
+    <title>Add new product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style>
+		#t1{
+			font-family: cursive;
+			background-color: #404354;
+			margin-top: 0px;
+			height: 90px;
+			width: 100%;
+			font-size: 50px;
+			text-align: center;
+			color:white;
+			margin-bottom: 0px;
+
+
+		}
+		#t1 a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding-top: 15px;
+			padding-bottom: 10px;
+			margin-right: 20px;
+			position: relative;
+			display: inline;
+			float: right;
+			
+		}
+		.active:hover {
+    		border-bottom: 2px solid white;
+		}
+		.adminlogin
+		{
+			position:relative;
+			top:0;
+			right:0;
+
+		}
+		
+        
+	</style>
+</head>
+<body>
+    <img src="logo.png" style="height: 70px;padding-top:10px;padding-left:8px;padding-right: 50px;display: inline;position: absolute; ">
+	<div id="t1">
+		Campus Mart
+		<a class="active" href="mainpage.html" style="font-family:initial;padding: 20px;" >HOME</a>
+	</div>
+   
+    <form action="addnewproduct.php" class="center" method="POST">
+        <div id="main" style="width: 550px;" >
+        
+						<h3>Enter Product details</h3>
+						<br>
+						<label for="prodID" id="label1">Product ID :    </label>    <label for="catID">Category ID :</label>
+						<br>   
+						<input type="text" name="pid">
+            <input type="text" name="cid">
+						<br>
+						<br>
+						<label for="prodname" id="label2">Product Name :</label>    <label for="supplier_id">Supplier ID : </label>
+						<br> 
+						<input type="text" name="pname">
+            <input type="text" name="s_id">
+						<br>
+						<br>
+						<label for="price" id="label3">Price : </label>   <label for="stock">Stock : </label> 
+						<br> 
+						
+						<input type="number" name="price">
+            <input type="number" name="stock" >
+            <br>
+						<br>
+						<label for="prod_desc">Product Description : </label> <br><textarea name="pdesc" id="pdesc" rows=3  cols=46	 style="font-size: 12px;"></textarea>
+            <br>
+						<br>
+            <button type="reset" class="cancelbtn">Cancel</button>
+            <button type="submit" class="submitbtn">Add Product</button>
+       
+    </form>
+</div>
+
+</body>
+   
+ 
+<footer class="page-footer font-small blue pt-4" style="background-color: #67768B;position: relative;margin-top:100px;bottom: 0;">
+    <div class="container-fluid text-center text-md-left" style="color: black;">
+		<div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <h5 class="text-uppercase">About Us</h5>
+          <p>Campus Book Mart is a local bookstore serving the students, faculty and staff of PES University - Bangalore with pride. Our primary goal is to ensure students are able to obtain the course materials they need at reasonable prices. We also provide many other items to support your academic career and college spirit. Please browse our website or stop by our store anytime!</p>
+
+        </div>
+        
+        <div class="col-md-3 mb-md-0 mb-3">
+			<h5 class="text-uppercase">ADDRESS</h5>
+            	<p>PES University<br>
+            		100 Feet Ring Road,BSK III stage<br>
+            		Bangalore - 560085
+            	</p>
+          </div>
+          
+          <div class="col-md-3 mb-md-0 mb-3">
+            
+            <h5 class="text-uppercase">CONTACT</h5>
+            	<p>
+            		Ph-no :  +91 80 26721983<br>
+            		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+91 80 26772108
+            	</p>
+          </div>
+         
+      </div>
+    </div>
+    
+    <div class="footer-copyright text-center py-3"> © 2018 Copyright:
+      <a style="text-decoration: none;color: black;"> CampusMart.com</a>
+    </div>
+  </footer>
+    
+    
+
+</html>

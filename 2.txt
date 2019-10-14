@@ -1,0 +1,22 @@
+//Name:Tanvi P Karennavar
+//USN:PES1201700646
+printf("normal equation:\n");
+m=input("enter rows  for A");
+n=input("enter cols for A");
+//A=[1,1;1,-1;-2,4];
+
+for i=1:m
+    for j=1:n
+        A(i,j)=input("enter values for matrix A : ");
+    end
+end
+B=[1;2;7];
+xcap = ((inv(A'*A))*A')*B;
+p = A*xcap;
+disp(xcap,"X_Cap=");
+disp(p,"P=");
+if (p==B) then
+    disp("Xcap is the exact solution");
+else
+    disp(B-p,"Error E:");
+end
